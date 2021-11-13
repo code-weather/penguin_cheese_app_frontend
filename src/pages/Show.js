@@ -67,9 +67,9 @@ if (props.cheeses) {
             />
             <input
                 type="text"
-                value={editForm.title}
-                name="title"
-                placeholder="title"
+                value={editForm.countryOfOrigin}
+                name="countryOfOrigin"
+                placeholder="countryOfOrigin"
                 onChange={handleChange}
             />
             <input type="submit" value="Update Person" />
