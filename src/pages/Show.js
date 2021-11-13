@@ -39,7 +39,7 @@ if (props.cheeses) {
         // prevent the refresh
         event.preventDefault()
         // pass the form data to updateCheeses
-        props.updateCheeses(editForm, person._id)
+        props.updateCheeses(editForm, cheese._id)
         // redirect cheeses back to index
         navigate("/")
     }
