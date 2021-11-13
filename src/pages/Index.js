@@ -51,9 +51,9 @@ const form = <form onSubmit={handleSubmit}>
     />
     <input
     type="text"
-    value={newForm.title}
+    value={newForm.countryOfOrigin}
     name="title"
-    placeholder="title"
+    placeholder="Country Of Origin"
     onChange={handleChange}
     />
     <input type="submit" value="Create Cheese"/>

@@ -79,7 +79,7 @@ if (props.cheeses) {
     return (
         <div className="cheese">
             <h1>{cheese.name}</h1>
-            <h2>{cheese.title}</h2>
+            <h2>{cheese.countryOfOrigin}</h2>
             <img src={cheese.image} alt={cheese.name} />
             {form}
             <button onClick={removeCheese}>DELETE Cheese</button>
