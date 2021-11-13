@@ -69,7 +69,7 @@ if (props.cheeses) {
                         <Link to={`/cheese/${cheese._id}`}>
                             <h1>{cheese.name}</h1>
                         </Link>
-                        <h3>{cheese.countryOfOrigin}</h3>
+                        <h3>Country of Origin: {cheese.countryOfOrigin}</h3>
                         <img src={cheese.image} alt={cheese.name} />
                     </div>
             );
