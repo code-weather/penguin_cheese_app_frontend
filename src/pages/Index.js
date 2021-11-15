@@ -24,8 +24,10 @@ const handleChange = (event) => {
 const handleSubmit = (event) => {
     // prevent the page from refreshing
     event.preventDefault()
-    // pass the form data to createPeople function
-    props.createPeople(newForm)
+    // pass the form data to createCheese function
+
+    // This props.createCheese(newForm) is giving me an error
+    props.createCheeses(newForm)
     // reset the form to empty
     setNewForm({
         name: "",
@@ -34,30 +36,32 @@ const handleSubmit = (event) => {
     })
 }
 
-const form = <form onSubmit={handleSubmit}>
-    <input
-    type="text"
-    value={newForm.name}
-    name="name"
-    placeholder="name"
-    onChange={handleChange}
+const form = (
+    <form onSubmit={handleSubmit}>
+        <input
+        type="text"
+        value={newForm.name}
+        name="name"
+        placeholder="name"
+        onChange={handleChange}
     />
     <input
-    type="text"
-    value={newForm.image}
-    name="image"
-    placeholder="Image URL"
-    onChange={handleChange}
+        type="text"
+        value={newForm.image}
+        name="image"
+        placeholder="Image URL"
+        onChange={handleChange}
     />
-    <input
-    type="text"
-    value={newForm.countryOfOrigin}
-    name="title"
-    placeholder="Country Of Origin"
-    onChange={handleChange}
+        <input
+        type="text"
+        value={newForm.countryOfOrigin}
+        name="countryOfOrigin"
+        placeholder="countryOfOrigin"
+        onChange={handleChange}
     />
-    <input type="submit" value="Create Cheese"/>
-</form>
+    <input type="submit" value="Create Cheese" />
+    </form>
+);
 
 if (props.cheeses) {
     return (
